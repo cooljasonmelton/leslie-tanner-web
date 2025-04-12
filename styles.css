@@ -33,6 +33,40 @@ h1 {
   text-transform: uppercase;
 }
 
+h2::before {
+  content: "";
+  display: block;
+  height: 80px; /* height of your sticky nav */
+  margin-top: -80px;
+  visibility: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  padding: 1rem;
+  z-index: 999;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -49,4 +83,9 @@ h1 {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.placeholder-div {
+  display: block;
+  min-height: 100vh;
 }
