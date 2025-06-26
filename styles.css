@@ -4,8 +4,10 @@ body {
   font-family: Courier, monospace;
   font-size: 16px;
   margin: 20px;
+  background-image: url("assets/bg-images/2025.4.20.leslietanner.website.backgroundidea1.gif");
+  background-size: contain;
 
-  background-color: black;
+  /* background-color: black;
   background-image: radial-gradient(
       white,
       rgba(255, 255, 255, 0.2) 2px,
@@ -19,7 +21,7 @@ body {
       transparent 30px
     );
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; */
 }
 
 a {
@@ -31,14 +33,6 @@ h1 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-h2::before {
-  content: "";
-  display: block;
-  height: 80px; /* height of your sticky nav */
-  margin-top: -80px;
-  visibility: hidden;
 }
 
 body {
@@ -74,6 +68,8 @@ body {
 
 .image-grid {
   max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -88,4 +84,29 @@ body {
 .placeholder-div {
   display: block;
   min-height: 100vh;
+}
+
+.text-wrapper-0 {
+  font-style: italic;
+  font-size: 2.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-wrapper-1 {
+  padding: 0.5rem;
+}
+
+.junkyard-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leslie-junkyard-image {
+  border: 1rem inset #f9bd48;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
