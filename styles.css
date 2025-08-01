@@ -64,6 +64,7 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -88,6 +89,35 @@ body {
   min-height: 100vh;
 }
 
+/* FIRST LINE ANIMATION */
+.first-line-wrapper {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 2.25rem;
+  overflow: clip;
+  width: 100%;
+  background-color: yellow;
+}
+.first-line-text {
+  padding: 1rem 0;
+  text-transform: uppercase;
+  background-color: #f9bd48;
+  color: #941c2f;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* FIRST LINE ANIMATION END */
+
 .text-wrapper-0 {
   font-style: italic;
   font-size: 2.25rem;
@@ -99,18 +129,25 @@ body {
   padding: 0.5rem;
 }
 
-.junkyard-wrapper {
+.leslie-image-wrapper {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.leslie-junkyard-image {
+.leslie-image-0 {
+  filter: sepia(7%) saturate(400%) hue-rotate(10deg) brightness(80%)
+    contrast(120%);
   border: 1rem inset #f9bd48;
-  width: 60%;
+  width: 20%;
   margin-left: auto;
   margin-right: auto;
+}
+@media only screen and (max-width: 767px) {
+  .leslie-image-0 {
+    width: 40%;
+  }
 }
 
 .divider {
