@@ -63,6 +63,10 @@ body {
   text-decoration: none;
 }
 
+.nav-section {
+  padding-top: 2em;
+}
+
 .container {
   position: relative;
   max-width: 800px;
@@ -137,8 +141,8 @@ body {
 }
 
 .leslie-image-0 {
-  filter: sepia(7%) saturate(400%) hue-rotate(10deg) brightness(80%)
-    contrast(120%);
+  /* filter: sepia(7%) saturate(400%) hue-rotate(10deg) brightness(80%)
+    contrast(120%); */
   border: 1rem inset #f9bd48;
   width: 20%;
   margin-left: auto;
@@ -146,7 +150,7 @@ body {
 }
 @media only screen and (max-width: 767px) {
   .leslie-image-0 {
-    width: 40%;
+    width: 60%;
   }
 }
 
@@ -154,4 +158,14 @@ body {
   width: 50%;
   margin-bottom: 1rem;
   border: 10px outset #f9bd48;
+}
+
+.store-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.store-item-img {
+  width: 20%;
 }
