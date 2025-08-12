@@ -1,11 +1,17 @@
 body {
   background: black;
   color: white;
-  font-family: Courier, monospace;
   font-size: 16px;
-  margin: 20px;
   background-image: url("assets/bg-images/2025.4.20.leslietanner.website.backgroundidea1.gif");
   background-size: contain;
+  margin: 0;
+  font-family: sans-serif;
+}
+@media only screen and (max-width: 767px) {
+  body {
+    background-size: cover;
+    background-size: auto;
+  }
 }
 
 a {
@@ -19,9 +25,10 @@ h1 {
   text-transform: uppercase;
 }
 
-body {
-  margin: 0;
-  font-family: sans-serif;
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 28px;
+  }
 }
 
 .navbar {
@@ -30,12 +37,11 @@ body {
   background-color: black;
   padding: 1rem 1.5rem;
   z-index: 999;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: space-between;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 .navbar ul {
   list-style: none;
   display: flex;
@@ -43,18 +49,22 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .navbar a {
   color: white;
   text-decoration: none;
 }
-
 .nav-section {
   padding-top: 2em;
 }
-
 .sm-icon-image {
   width: 1rem;
+}
+@media only screen and (max-width: 767px) {
+  .navbar {
+    font-size: 12px;
+    /* margin-top: 2em; */
+    padding: 1em 0.5em 0.5em;
+  }
 }
 
 .container {
@@ -62,20 +72,10 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
-
-.image-grid {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-
-.image-grid img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 767px;
+  }
 }
 
 .placeholder-div {
@@ -117,6 +117,11 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media only screen and (max-width: 767px) {
+  .text-wrapper-0 {
+    font-size: 2rem;
+  }
+}
 
 .text-wrapper-1 {
   padding: 0 2rem;
@@ -134,8 +139,6 @@ body {
 }
 
 .leslie-image-0 {
-  /* filter: sepia(7%) saturate(400%) hue-rotate(10deg) brightness(80%)
-    contrast(120%); */
   border: 1rem inset #f9bd48;
   width: 20%;
   margin-left: auto;
@@ -152,6 +155,7 @@ body {
   border: 10px outset #f9bd48;
 }
 
+/* STORE SECTION  */
 .store-table {
   width: 100%;
   border-collapse: separate;
@@ -181,17 +185,21 @@ body {
   border: 0.2rem solid white;
   border-left: 0;
 }
+@media only screen and (max-width: 767px) {
+  .store-table,
+  .store-table-row {
+    max-width: calc(100% - 0.4em);
+  }
+}
 .store-item-img {
   width: 100%;
 }
-
 .store-buy-button {
   padding: 0.5rem 1rem;
   color: black;
   text-decoration: none;
   white-space: nowrap;
 }
-
 .styleLikeButton {
   appearance: button;
   -webkit-appearance: button;
@@ -215,17 +223,16 @@ body {
 
   cursor: pointer;
 }
-
 .styleLikeButton:disabled {
   cursor: default;
   opacity: 0.5;
 }
-
 .styleLikeButton:focus {
   outline: 1px dotted;
   outline-offset: -1px;
 }
 
+/* WRITING SECTION */
 #writing {
   padding: 1em;
   line-height: 1.5;
@@ -234,14 +241,6 @@ body {
 .writing-img-wrapper {
   width: 100%;
   display: flex;
-  /* justify-content: center; */
-}
-
-.writing-subheading {
-  /* text-align: center; */
-}
-
-.writing-img {
 }
 
 @media only screen and (max-width: 767px) {
