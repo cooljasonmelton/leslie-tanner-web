@@ -225,3 +225,27 @@ body {
   outline: 1px dotted;
   outline-offset: -1px;
 }
+
+#writing {
+  padding: 1em;
+  line-height: 1.5;
+}
+
+.writing-img-wrapper {
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+}
+
+.writing-subheading {
+  /* text-align: center; */
+}
+
+.writing-img {
+}
+
+@media only screen and (max-width: 767px) {
+  .writing-img {
+    width: 60%;
+  }
+}
