@@ -44,6 +44,7 @@ h1 {
 
 /* NAVBAR */
 .navbar {
+  margin-top: 6em;
   position: sticky;
   top: 0;
   background-color: black;
@@ -121,7 +122,7 @@ h1 {
 }
 
 .text-wrapper-1 {
-  padding: 0 2rem;
+  padding: 0 2rem 3em;
 }
 
 .section-heading {
@@ -152,8 +153,13 @@ h1 {
   border: 10px outset #f9bd48;
 }
 
-/* STORE SECTION  */
+/* YOU MADE IT THIS FAR SECTION */
+.you-made-it-section {
+  line-height: 1.25em;
+  padding: 2em 1em 0;
+}
 
+/* STORE SECTION  */
 #store {
   margin-bottom: 8em;
 }
@@ -237,8 +243,13 @@ h1 {
 
 /* WRITING SECTION */
 #writings {
-  padding: 1em;
+  padding: 1em 1em 0;
   line-height: 1.5;
+}
+
+.writing-subheading {
+  padding-top: 4em;
+  margin-top: -4em;
 }
 
 .writing-img-wrapper {
