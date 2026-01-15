@@ -72,11 +72,23 @@ h1 {
 .sm-icon-image {
   width: 1rem;
 }
+
+.nav-socials-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
 @media only screen and (max-width: 767px) {
   .navbar {
     font-size: 12px;
     /* margin-top: 2em; */
     padding: 1em 0.5em 0.5em;
+    display: flex;
+    align-items: center;
+  }
+  .nav-socials-wrapper {
+    flex-direction: column;
+    gap: 0;
   }
 }
 
@@ -123,6 +135,10 @@ h1 {
 
 .text-wrapper-1 {
   padding: 0 2rem 3em;
+}
+
+.text-wrapper-2 {
+  padding: 0 2rem 0;
 }
 
 .section-heading {
@@ -266,7 +282,7 @@ h1 {
 .twitch-embed {
   width: 100%;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 32px auto 0;
   aspect-ratio: 16 / 9;
   border-radius: 12px;
   overflow: hidden;
