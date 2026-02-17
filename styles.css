@@ -169,6 +169,12 @@ h1 {
   border: 10px outset #f9bd48;
 }
 
+.divider__top-space {
+  margin: 4rem auto 0;
+  width: 50%;
+  border: 10px outset #f9bd48;
+}
+
 /* YOU MADE IT THIS FAR SECTION */
 .info-section {
   line-height: 1.25em;
